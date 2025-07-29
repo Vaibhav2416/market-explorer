@@ -1,12 +1,35 @@
-# React + Vite
+# Market Seasonality Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview  
+This React app visualizes market seasonality through an interactive calendar showing volatility, liquidity, and performance data. Users can toggle between daily, weekly, and monthly views and explore detailed metrics per date.
 
-Currently, two official plugins are available:
+## Features  
+- **Custom Calendar Views:** Daily, weekly, and monthly with smooth navigation.  
+- **Volatility Heatmap:** Color-coded days (green/yellow/red) based on volatility levels.  
+- **Performance Icons:** Up/down arrows and neutral indicators on each day.  
+- **Liquidity Indicators:** Circles sized by trading volume on calendar cells.  
+- **Interactive Dialog:** Click a day to see detailed volatility, liquidity, and performance.  
+- **Navigation Controls:** Prev/Next month buttons and view toggle buttons.  
+- **Responsive & Accessible:** Keyboard support, tooltips, and clear visual cues.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Usage  
+1. Install dependencies:  
+   `npm install @mui/material @mui/icons-material @emotion/react @emotion/styled`  
+2. Start the app:  
+   `npm start`  
+3. Navigate months, switch views, hover for tooltips, and click days for details.
 
-## Expanding the ESLint configuration
+## Code Structure  
+- Single React component (`Calendar`) managing state for date, view mode, and selected day.  
+- Utility functions handle calendar calculations.  
+- Conditional rendering for different timeframe views.  
+- Uses Material-UI components for UI consistency and accessibility.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Assumptions  
+- Uses mocked data for demonstration (volatility, liquidity, performance).  
+- Designed for one instrument and basic metrics, easily extendable.  
+
+## Next Steps  
+- Integrate real-time or historical data APIs.  
+- Add more detailed analytics and chart components.  
+- Implement bonus features like export and alerts.
