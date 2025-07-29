@@ -14,9 +14,9 @@ This React app visualizes market seasonality through an interactive calendar sho
 
 ## Usage  
 1. Install dependencies:  
-   `npm install @mui/material @mui/icons-material @emotion/react @emotion/styled`  
+   `npm install`  
 2. Start the app:  
-   `npm start`  
+   `npm run dev`  
 3. Navigate months, switch views, hover for tooltips, and click days for details.
 
 ## Code Structure  
